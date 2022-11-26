@@ -1,0 +1,50 @@
+.conversations {
+    display: flex;
+    transition: all 0.5s ease-out;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.conversations:hover {
+    background-color: rgb(245, 243, 243);
+}
+
+.conversations__image {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.conversations__name {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .chat__noConversation {
+        font-size: 30px !important; 
+    }
+    .messenger .sidebar__toggle{
+        left : 50%;
+    }
+    .chat__menu{
+        display: none;
+    }
+    .messenger textarea{
+        height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .conversation-active {
+        display: block !important;
+        position: fixed;
+        background: white;
+        z-index: 1;
+        height: 100%;
+        width: 50%;
+    }
+}

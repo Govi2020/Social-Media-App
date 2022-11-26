@@ -1,0 +1,136 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    overflow-x: scroll;
+    position: sticky;
+    top: 50px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(194, 194, 194);
+}
+
+.sidebar__wrapper {
+    padding: 20px;
+}
+
+.sidebar__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.sidebar__listItem {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    transition: all 0.4s ease-in-out;
+    /* padding-bottom: 5px;
+    padding-top: 5px; */
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.sidebar__listItem:hover {
+    transition: all 0.4s ease-in-out;
+    background-color: rgba(197, 195, 195, 0.233);
+}
+
+.sidebar__icon {
+    margin-right: 15px;
+}
+
+.sidebar__button {
+    width: 99%;
+    margin: 5%;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+.sidebar__button:hover {
+    transition: all 0.4s ease-in-out;
+    background-color: rgb(224, 217, 217);
+}
+
+.sidebar__hr {
+    margin: 20px 0;
+}
+
+.sidebar__friendList {
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar__friend {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.sidebar__friendImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.sidebar__toggle {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        display: none;
+    }
+
+    .sidebar__wrapper{
+        width: 100%;
+    }
+
+    .sidebar__toggle {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        z-index: 2;
+        left: 55.5%;
+        display: block;
+        bottom: 50%;
+        background: #1877f2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+
+    .sidebar-active {
+        display: flex;
+        position: fixed;
+        width: 55vw;
+        background: #eee;
+        z-index: 1;
+    }
+
+    .sidebar__toggle-active {
+        left: 0 !important;
+    }
+}

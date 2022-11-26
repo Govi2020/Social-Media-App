@@ -1,0 +1,76 @@
+.postInfo {
+    display: flex;
+    position: relative;
+}
+
+/* Element | http://localhost:3000/post/sdf */
+
+.postInfo .postInfo__left {
+    flex: 2;
+    width: min-content;
+}
+
+/* Element | http://localhost:3000/post/sdf */
+
+.postInfo .postInfo__center {
+    flex: 10;
+}
+
+/* Element | http://localhost:3000/post/sdf */
+
+.postInfo__right {
+    flex: 4;
+}
+
+/* Element | http://localhost:3000/post/sdf */
+
+.postInfo .post {
+    height: calc(100vh + 50rem);
+    box-shadow: none;
+}
+
+/* Inline #31 | http://localhost:3000/post/s */
+
+.postInfo .post__topLeft {
+    justify-content: flex-start;
+}
+
+.postInfo .post__userName {
+    /* font-size: 15px; */
+    font-size: 17px;
+}
+
+.postInfo .post__profilePhoto {
+    width: 40px;
+    height: 40px;
+}
+
+/* Element | http://localhost:3000/post/s */
+
+.postInfo .post__text {
+    font-size: 1.2rem;
+}
+
+.postInfo__comment-container {
+    margin-top: 20px;
+    overflow-y: scroll;
+    height: 700px;
+}
+
+.postInfo .share {
+    margin-top: 35px;
+}
+
+.postInfo .share__top {
+    justify-content: space-evenly;
+}
+
+
+.share__top .share__comment_btn {
+    padding: 6px;
+    border: none;
+    background: #008000;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer;
+}

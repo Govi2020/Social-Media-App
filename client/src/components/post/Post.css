@@ -1,0 +1,90 @@
+.post {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.58);
+    box-shadow: 0px 0px 16px -6px rgba(0, 0, 0, 0.58);
+}
+
+.post__wrapper {
+    padding: 10px;
+}
+
+.post__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post__profilePhoto {
+    object-fit: cover;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.post__userName {
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+
+.post__topLeft {
+    display: flex;
+    align-items: center;
+}
+
+.post__date {
+    font-size: 12px;
+}
+
+.post__center {
+    margin: 20px 0;
+}
+
+.post__image {
+    object-fit: contain;
+    width: 100%;
+    max-height: 500px;
+    margin-top: 20px;
+}
+
+.post__bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.post__bottomLeft{
+    display: flex;
+    align-items: center;
+}
+
+.post__bottomRight{
+    display: flex;
+    align-items: center;
+}
+
+.post__share{
+    cursor: pointer;
+}
+
+.post__like{
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.post__likeCounter{
+    font-size: 15px;
+}
+
+.post__commentText {
+    cursor: pointer;
+    border-bottom: 1px dashed gray;
+}
+
+.post__more{
+    cursor: pointer;
+}

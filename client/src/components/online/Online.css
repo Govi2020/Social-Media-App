@@ -1,0 +1,34 @@
+
+.rightbar__friends{
+    margin: 0;
+    padding: 0;
+}
+
+.rightbar__friend{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.rightbar__image-container{
+    margin-right: 10px;
+    position: relative;
+}
+
+.rightbar__friendPhoto{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.rightbar__online{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color:  limegreen;
+    display: block;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+}
