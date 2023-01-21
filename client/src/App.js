@@ -21,15 +21,17 @@ import Followings from "./pages/Followings/Followings";
 import ProfileEdit from "./pages/ProfileEdit/ProfileEdit";
 import Messenger from "./pages/Messenger/Messenger";
 import { io } from "socket.io-client";
+import axios from "axios"
 
 function App() {
     const { user } = useContext(AuthContext);
     const [socket, setSocket] = useState(null);
     const [onlineUsers, setOnlineUsers] = useState([]);
-
+    
+    axios.defaults.baseURL = process.env.REACT_APP_BACKEND_SERVER;
     useEffect(() => {
         if (user) {
-            const res = io("https://nameless-chamber-90432.herokuapp.com/");
+            const res = io(process.env.REACT_APP_SOCKET_SERVER);
             setSocket({ current: res });
         }
     }, [user]);
