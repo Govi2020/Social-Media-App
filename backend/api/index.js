@@ -73,8 +73,8 @@ mongoose.connect(
     }
 );
 
-app.use("/images", express.static(path.join(__dirname, "public/images")));
-app.use("/videos", express.static(path.join(__dirname, "public/videos")));
+app.use("/images", express.static("./public/images"));
+app.use("/videos", express.static("./public/videos"));
 
 app.listen(port, () => {
     console.log("listening on port " + port);
